@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+@import '../variables/resolution';
+
+@mixin large-screen {
+    @media screen and (min-width: $START-LARGE-SCREEN) {
+        @content;
+    }
+}
+
+@mixin medium-screen {
+	@media screen and (max-width: $END-MEDIUM-SCREEN) and (min-width: $START-MEDIUM-SCREEN) {
+			@content;
+	}
+}
+
+@mixin small-screen {
+    @media screen and (max-width: $END-SMALL-SCREEN) {
+        @content;
+    }
+}

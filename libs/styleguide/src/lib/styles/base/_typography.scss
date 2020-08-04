@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+@import 'variables/fonts';
+
+$global-light-font-family: 'Open Sans Light';
+$global-regular-font-family: 'Open Sans Regular';
+$global-bold-font-family: 'Open Sans Bold';
+
+//
+// Fonts
+//
+@font-face {
+	font-family: $global-light-font-family;
+	src: url('/assets/fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: $global-regular-font-family;
+	src: url('/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: $global-bold-font-family;
+	src: url('/assets/fonts/OpenSans-Bold.ttf') format('truetype');
+}

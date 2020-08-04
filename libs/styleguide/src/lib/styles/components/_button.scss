@@ -1,0 +1,81 @@
+@charset 'UTF-8';
+
+@import 'base/typography';
+@import 'variables/colors';
+@import 'variables/fonts';
+
+@mixin button {
+	-webkit-appearance: none;
+	appearance: none;
+
+	box-sizing: border-box;
+	outline: none;
+	cursor: pointer;
+
+	padding: .4rem 1rem;
+
+	// font-family: $global-light-font-family;
+	// font-size: $global-button-font-size;
+
+	white-space: nowrap;
+
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+
+@mixin primary-button {
+	@include button;
+
+	background-color: $vivid-cerulean;
+	color: $white;
+
+	border: 1px solid $vivid-cerulean;
+
+	&:hover {
+		background: rgba($vivid-cerulean, .8);
+		color: $white;
+	}
+}
+
+@mixin secondary-button {
+	@include button;
+
+	background-color: $aurometalsaurus;
+	color: $white;
+
+	border: 1px solid $white;
+
+	&:hover {
+		color: $aurometalsaurus;
+		background: $white;
+	}
+}
+
+@mixin tertiary-button {
+	@include button;
+
+	background-color: $red;
+	color: $white;
+
+	border: 1px solid $red;
+
+	&:hover {
+		background: rgba($red, .8);
+		color: $white;
+	}
+}
+
+@mixin quarternary-button {
+	@include button;
+	
+	background-color: $inchworm;
+	color: $rich-black;
+
+	border: 1px solid $inchworm;
+
+	&:hover {
+		background: rgba($inchworm, .8);
+		color: $rich-black;
+	}
+}

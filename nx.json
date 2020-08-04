@@ -17,22 +17,42 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
       }
     }
   },
   "projects": {
-    "polygon": {
-      "tags": []
-    },
-    "polygon-e2e": {
-      "tags": [],
-      "implicitDependencies": ["polygon"]
-    },
     "api": {
       "tags": []
     },
     "api-interfaces": {
+      "tags": []
+    },
+    "styleguide": {
+      "tags": []
+    },
+    "polygon-ui": {
+      "tags": []
+    },
+    "polygon-ui-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "polygon-ui"
+      ]
+    },
+    "microservice-a": {
+      "tags": []
+    },
+    "microservice-b": {
+      "tags": []
+    },
+    "microservice-c": {
       "tags": []
     }
   }

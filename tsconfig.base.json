@@ -16,7 +16,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@polygon/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@polygon/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@polygon/styleguide": ["libs/styleguide/src/index.ts"],
+      "@polygon-ui/core/*": ["apps/polygon-ui/src/app/core/*"],
+      "@polygon-ui/shared/*": ["apps/polygon-ui/src/shared/*"],
+      "@polygon-typings/ms-a": ["libs/api-interfaces/src/index/ts"],
+      "@polygon-typings/ms-b": ["libs/api-interfaces/src/index/ts"],
+      "@polygon-typings/ms-c": ["libs/api-interfaces/src/index/ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
