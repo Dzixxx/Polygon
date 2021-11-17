@@ -1,13 +1,16 @@
-import { memo } from "react";
 import { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
+
 import Routing from './routing/Routing';
+import RecoilApp from './recoil/Recoil';
+import RefExample from "./tips/RefExample";
+import BatchExample from './tips/BatchExample';
 
 function App(props: {
   callback: () => void
 }) {
   useEffect(() => {
-    console.log('[useEffect] Called after repaint');
+    console.log('[App] -> [useEffect] (called after repaint)');
   }, []);
 
   return (
@@ -19,9 +22,14 @@ function App(props: {
         <Routing />
       </BrowserRouter>
 
-      {/* Coming soon */}
+      {/* Recoil with Suspense */}
+      <RecoilApp />
+
+      {/* React hooks knowledge sharing */}
+      <RefExample />
+      <BatchExample />
     </div>
   );
 }
 
-export default memo(App);
+export default App;
