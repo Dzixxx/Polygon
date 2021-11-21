@@ -10,10 +10,10 @@ export default function BatchExample() {
     function handleClick() {
       console.log("[BatchExample] -> handleClick");
   
-      setA((v) => v + 1); // Will re-render
-      setB((v) => v + 1); // Will re-render
-      setC((v) => v + 1); // Will re-render
-      setD((v) => v + 1); // Will re-render
+      setA((v) => v + 1); // Will ask for re-render
+      setB((v) => v + 1); // Will ask for re-render
+      setC((v) => v + 1); // Will ask for re-render
+      setD((v) => v + 1); // Will ask for re-render
   
       // React will only re-render once at the end (that's batching!)
     }
@@ -22,10 +22,10 @@ export default function BatchExample() {
         console.log("[BatchExample] -> handleAsyncClick");
         await new Promise(r => setTimeout(r, 1))
             
-        setA((v) => v + 1); // Will re-render
-        setB((v) => v + 1); // Will re-render
-        setC((v) => v + 1); // Will re-render
-        setD((v) => v + 1); // Will re-render
+        setA((v) => v + 1); // Will ask for re-render
+        setB((v) => v + 1); // Will ask for re-render
+        setC((v) => v + 1); // Will ask for re-render
+        setD((v) => v + 1); // Will ask for re-render
     
         // React will only re-render once at the end (that's batching!)
     }
@@ -34,16 +34,15 @@ export default function BatchExample() {
         console.log("[BatchExample] -> handlePromiseClick");
         Promise.resolve()
             .then(() => {
-                setA((v) => v + 1); // Will re-render
-                setB((v) => v + 1); // Will re-render
+                setA((v) => v + 1); // Will ask for re-render
+                setB((v) => v + 1); // Will ask for re-render
+                // React will re-render for only once!
             })
             .then(() => {
-                setC((v) => v + 1); // Will re-render
-                setD((v) => v + 1); // Will re-render
-            })
-            .then(() => {
-                // React will re-render for first promise chain and for second separately
-            })  
+                setC((v) => v + 1); // Will ask for re-render
+                setD((v) => v + 1); // Will ask for re-render
+                // React will re-render for only once!
+            });
     }
 
     return (

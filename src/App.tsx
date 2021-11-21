@@ -5,6 +5,7 @@ import Routing from './routing/Routing';
 import RecoilApp from './recoil/Recoil';
 import RefExample from "./tips/RefExample";
 import BatchExample from './tips/BatchExample';
+import TransitionExample from './tips/TransitionExample'
 
 function App(props: {
   callback: () => void
@@ -28,6 +29,7 @@ function App(props: {
       {/* React hooks knowledge sharing */}
       <RefExample />
       <BatchExample />
+      <TransitionExample />
     </div>
   );
 }
