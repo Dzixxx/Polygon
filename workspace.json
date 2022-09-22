@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "cli": "apps/cli",
+    "cron": "apps/cron",
+    "microservice-a": "apps/microservice-a",
+    "microservice-b": "apps/microservice-b"
+  }
+}
