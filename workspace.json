@@ -3,10 +3,18 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
-    "api-interfaces": "libs/api-interfaces",
     "cli": "apps/cli",
     "cron": "apps/cron",
     "microservice-a": "apps/microservice-a",
-    "microservice-b": "apps/microservice-b"
+    "microservice-a-feature-a1": "libs/microservice-a/feature-a1",
+    "microservice-a-feature-a2": "libs/microservice-a/feature-a2",
+    "microservice-a-types-a1": "libs/microservice-a/types-a1",
+    "microservice-a-types-a2": "libs/microservice-a/types-a2",
+    "microservice-b": "apps/microservice-b",
+    "microservice-shared-feature-bootstrap": "libs/microservice-shared/feature-bootstrap",
+    "microservice-shared-feature-context": "libs/microservice-shared/feature-context",
+    "microservice-shared-feature-logger": "libs/microservice-shared/feature-logger",
+    "microservice-shared-feature-nats": "libs/microservice-shared/feature-nats",
+    "microservice-shared-feature-redis": "libs/microservice-shared/feature-redis"
   }
 }

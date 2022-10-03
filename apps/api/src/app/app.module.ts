@@ -1,11 +1,12 @@
 import { Module } from '@nestjs/common';
+import { NATSClientModule } from '@polygon/microservice-shared/feature-nats';
+import { RedisClientModule } from '@polygon/microservice-shared/feature-redis';
 
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
 
 @Module({
-  imports: [],
+  imports: [RedisClientModule, NATSClientModule],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [],
 })
 export class AppModule {}

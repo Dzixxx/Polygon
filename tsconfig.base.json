@@ -10,14 +10,41 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["es2019", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strictPropertyInitialization": false,
     "baseUrl": ".",
     "paths": {
       "@polygon/microservice-a": ["apps/microservice-a/src/main.ts"],
+      "@polygon/microservice-a/feature-a1": [
+        "libs/microservice-a/feature-a1/src/index.ts"
+      ],
+      "@polygon/microservice-a/feature-a2": [
+        "libs/microservice-a/feature-a2/src/index.ts"
+      ],
+      "@polygon/microservice-a/types-a1": [
+        "libs/microservice-a/types-a1/src/index.ts"
+      ],
+      "@polygon/microservice-a/types-a2": [
+        "libs/microservice-a/types-a2/src/index.ts"
+      ],
       "@polygon/microservice-b": ["apps/microservice-b/src/main.ts"],
-      "@polygon/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@polygon/microservice-shared/feature-bootstrap": [
+        "libs/microservice-shared/feature-bootstrap/src/index.ts"
+      ],
+      "@polygon/microservice-shared/feature-context": [
+        "libs/microservice-shared/feature-context/src/index.ts"
+      ],
+      "@polygon/microservice-shared/feature-logger": [
+        "libs/microservice-shared/feature-logger/src/index.ts"
+      ],
+      "@polygon/microservice-shared/feature-nats": [
+        "libs/microservice-shared/feature-nats/src/index.ts"
+      ],
+      "@polygon/microservice-shared/feature-redis": [
+        "libs/microservice-shared/feature-redis/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
