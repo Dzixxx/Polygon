@@ -34,7 +34,7 @@
     "@nrwl/linter": "14.7.5",
     "@nrwl/nest": "14.7.5",
     "@nrwl/node": "14.7.5",
-    "@nrwl/react": "^14.7.5",
+    "@nrwl/react": "^14.8.6",
     "@nrwl/workspace": "14.7.5",
     "@types/cron": "^2.0.0",
     "@types/jest": "28.1.1",
