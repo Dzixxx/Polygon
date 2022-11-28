@@ -6,7 +6,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "nx": "nx"
+    "nx": "nx",
+    "cruise": "depcruise --config .dependency-cruiser.js apps libs"
   },
   "private": true,
   "dependencies": {

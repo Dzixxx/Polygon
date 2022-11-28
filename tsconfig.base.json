@@ -30,20 +30,20 @@
         "libs/microservice-a/types-a2/src/index.ts"
       ],
       "@polygon/microservice-b": ["apps/microservice-b/src/main.ts"],
-      "@polygon/microservice-shared/feature-bootstrap": [
-        "libs/microservice-shared/feature-bootstrap/src/index.ts"
+      "@polygon/shared-backend/feature-bootstrap": [
+        "libs/shared-backend/feature-bootstrap/src/index.ts"
       ],
-      "@polygon/microservice-shared/feature-context": [
-        "libs/microservice-shared/feature-context/src/index.ts"
+      "@polygon/shared-backend/feature-context": [
+        "libs/shared-backend/feature-context/src/index.ts"
       ],
-      "@polygon/microservice-shared/feature-logger": [
-        "libs/microservice-shared/feature-logger/src/index.ts"
+      "@polygon/shared-backend/feature-logger": [
+        "libs/shared-backend/feature-logger/src/index.ts"
       ],
-      "@polygon/microservice-shared/feature-nats": [
-        "libs/microservice-shared/feature-nats/src/index.ts"
+      "@polygon/shared-backend/feature-nats": [
+        "libs/shared-backend/feature-nats/src/index.ts"
       ],
-      "@polygon/microservice-shared/feature-redis": [
-        "libs/microservice-shared/feature-redis/src/index.ts"
+      "@polygon/shared-backend/feature-redis": [
+        "libs/shared-backend/feature-redis/src/index.ts"
       ]
     }
   },

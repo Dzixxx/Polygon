@@ -5,9 +5,9 @@
 
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
-import { connectNATS } from '@polygon/microservice-shared/feature-nats';
+import { connectNATS } from '@polygon/shared-backend/feature-nats';
 
-import { connectRedis } from '@polygon/microservice-shared/feature-redis';
+import { connectRedis } from '@polygon/shared-backend/feature-redis';
 
 import { AppModule } from './app/app.module';
 

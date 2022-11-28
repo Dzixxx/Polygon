@@ -11,10 +11,10 @@
     "microservice-a-types-a1": "libs/microservice-a/types-a1",
     "microservice-a-types-a2": "libs/microservice-a/types-a2",
     "microservice-b": "apps/microservice-b",
-    "microservice-shared-feature-bootstrap": "libs/microservice-shared/feature-bootstrap",
-    "microservice-shared-feature-context": "libs/microservice-shared/feature-context",
-    "microservice-shared-feature-logger": "libs/microservice-shared/feature-logger",
-    "microservice-shared-feature-nats": "libs/microservice-shared/feature-nats",
-    "microservice-shared-feature-redis": "libs/microservice-shared/feature-redis"
+    "shared-backend-feature-bootstrap": "libs/shared-backend/feature-bootstrap",
+    "shared-backend-feature-context": "libs/shared-backend/feature-context",
+    "shared-backend-feature-logger": "libs/shared-backend/feature-logger",
+    "shared-backend-feature-nats": "libs/shared-backend/feature-nats",
+    "shared-backend-feature-redis": "libs/shared-backend/feature-redis"
   }
 }

@@ -1,7 +1,7 @@
 import { Controller } from '@nestjs/common';
 import { Transport, MessagePattern, Payload, Ctx, RedisContext, EventPattern, NatsContext } from '@nestjs/microservices';
-import { NATSClientService } from '@polygon/microservice-shared/feature-nats';
-import { RedisClientService } from '@polygon/microservice-shared/feature-redis';
+import { NATSClientService } from '@polygon/shared-backend/feature-nats';
+import { RedisClientService } from '@polygon/shared-backend/feature-redis';
 import { firstValueFrom } from 'rxjs';
 
 @Controller()
